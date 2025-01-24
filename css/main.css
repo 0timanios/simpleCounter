@@ -1,0 +1,62 @@
+*{
+    --primaryColor:#3569f7;
+    --primaryColor-light:hsl(224, 92%, 80%);
+    --secondaryColor:#e9f057;
+    --secondaryColor-light:hsl(63, 84%, 86%);
+    --accentColor: #ff6767;
+}
+
+body{
+    display: flex;
+    background-color: var(--secondaryColor) ;
+    justify-content: center;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    margin: 5rem 0;
+    background-color: var(--primaryColor-light);
+    align-items: center;
+    border-radius: 3rem;
+    padding: 2rem;
+    width:fit-content;
+    height: fit-content;
+}
+.title{
+    font-size: 4rem;
+    color: var(--primaryColor);
+}
+.counterContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.number{
+    font-size: 3rem;
+    font-weight: bold;
+    width: 10rem;
+    text-align: center;
+    padding: 1rem 2rem;
+    background-color: white;
+    margin: 1rem 0;
+    border-radius: 1rem;
+}
+.buttonContainer{
+    background-color: var(--secondaryColor-light);
+    border-radius: 0.5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+    width: max-content;
+    padding:1rem 2rem;
+}
+.utilityButton{
+    background-color: var(--primaryColor-light);
+    color: white;
+    border: 2rem var(--primaryColor);
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+}
